@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-    double x1x2, y1y2, dist;
+    double x1, x2, y1,y2, dist;
     scanf("%lf %lf", &x1, &y1);
     scanf("%lf %lf", &x2, &x2);
 
