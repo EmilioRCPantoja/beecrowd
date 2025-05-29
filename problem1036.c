@@ -8,15 +8,11 @@ int main()
 
     delta = (b*b) -4 * a * c;
 
-    if (delta == 0) 
+    if (delta < 0 | a==0 | b ==0 | c==0) 
     {
-        x1 = (-b + sqrt(delta))/(2*a);
-        x2 = (-b - sqrt(delta))/(2*a);
-
-        printf("R1 = %.5lf\n", x1);
-        printf("R2 = %.5lf\n", x2);
+      printf("Impossivel calcular\n");
     }
-    else if(delta > 0)
+    else if(delta == 0)
     {
         x1 = (-b + sqrt(delta))/(2*a);
         x2 = (-b - sqrt(delta))/(2*a);
@@ -26,7 +22,12 @@ int main()
     }
     else
     {
-        printf("Impossivel calcular\n");
+        x1 = (-b + sqrt(delta))/(2*a);
+        x2 = (-b - sqrt(delta))/(2*a);
+
+        printf("R1 = %.5lf\n", x1);
+        printf("R2 = %.5lf\n", x2);  
+        
     }
 
 
