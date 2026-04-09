@@ -1,7 +1,9 @@
 #include <stdio.h>
  
 int main() {
+
  int A, B, s;
+ 
  printf(" ");
  scanf("%d", &A);
  printf(" ");
