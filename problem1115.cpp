@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+    int x, y, i = 1;
+    
+    while (i < 2)
+    {
+        cin >> x >> y;
+        if (x > 0 && y > 0)
+        {
+            cout<<"primeiro"<<endl;
+        } else if (x < 0 && y > 0)
+        {
+            cout<<"segundo"<<endl;
+        } else if (x < 0 && y < 0)
+        {
+            cout<<"terceiro"<<endl;
+        } else if (x > 0 && y < 0)
+        {
+            cout<<"quarto"<<endl;
+        } else
+        {
+            break;
+        }
+    }
+
+    return 0;
+}
